@@ -1,0 +1,23 @@
+{
+	"private": true,
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"lint": "turbo run lint",
+		"format": "prettier --write \"**/*.{ts,tsx,md,json,js,jsx}\""
+	},
+	"devDependencies": {
+		"eslint": "^7.32.0",
+		"eslint-config-custom": "*",
+		"prettier": "^2.5.1",
+		"turbo": "latest",
+		"react": "^18.2.0",
+		"react-native": "^0.71.7"
+	},
+	"name": "my-turborepo",
+	"packageManager": "yarn@1.22.19",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	]
+}
